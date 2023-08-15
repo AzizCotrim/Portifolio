@@ -274,7 +274,8 @@ footer p{
   }
 
   section.sobre .img{
-    width: 100%;
+    width: 100% !important;
+    max-width: 457px;
   }
 
   section.sobre .info{
