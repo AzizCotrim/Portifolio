@@ -1,0 +1,318 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+  color: white;
+}
+
+html,body{
+  height: 100%;
+  background-color: black;
+}
+
+h3,h4{
+  font-weight: 400;
+}
+
+
+section:nth-of-type(odd){
+  background-color: green;
+}
+
+/*GERAL*/
+
+section{
+  height:768px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.tx-center{
+  text-align: center;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+.clear{
+  clear: both;
+}
+
+
+/*HEADER*/
+
+section.header{
+  align-items: center;
+}
+
+.header .tx-header h3{
+ font-size: 32pt;
+}
+
+.header p{
+  font-size: 88pt;
+  font-weight: bold;
+}
+
+.header h4{
+  font-size: 20pt;
+  margin: 10px 0 50px 0;
+}
+
+section.header .button{
+  display: inline-block;
+  background-color: white;
+  width: 290px;
+  height: 80px;
+}
+
+/*SOBRE*/
+
+section.sobre div.img{
+  display: inline-block;
+  margin: 20px 0;
+  background-color: white;
+  height: 738px;
+  width: 457px;
+}
+
+
+section.sobre .tx-sobre{
+  display: inline-block;
+  margin-top: 100px;
+  width: 583px;
+  height: 441px;
+  padding: 60px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.tx-sobre h3{
+  font-weight: bold;
+  font-size: 40pt;
+  margin-bottom: 25px;
+}
+
+.tx-sobre p{
+  font-size: 17.7pt;
+}
+
+.contato{
+  padding: 20px 0 0 40px;
+}
+
+.contato p{
+  margin-top: 10px;
+  font-size: 20pt;
+}
+
+.contato p i{
+  color: white;
+}
+
+/*CONHECIMENTOS*/
+
+section.conhecimentos{
+  align-items: center;
+  height: 768px;
+  margin-top: 30px;
+}
+
+section.conhecimentos .conhe-wrapper{
+ width: 40%;
+}
+
+.tx-conhe h3{
+  font-weight: bold;
+  font-size: 36pt;
+  margin-bottom: 20px;
+}
+
+.tx-conhe p{
+  font-size: 20pt;
+}
+
+section.conhecimentos .icons{
+  justify-content: end;
+  width: 60%;
+  padding: 20px 0 20px 0;
+  flex-wrap: wrap;
+}
+
+div.icons .icon{
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 5);
+  height: calc(100% / 2);
+  margin: 0 10px 15px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+div.icons .icon i{
+  font-size: 50px;
+}
+
+/*PROJETOS*/
+
+section.projetos{
+  align-items: center;
+}
+
+section.projetos h3{
+  text-align: left;
+  margin-left: 80px;
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+section.projetos .wrapper{
+  justify-content: center;
+}
+
+section.projetos .projeto{
+  height: 418px;
+  width: 494px;
+  border-radius: 30px;
+  margin: 30px;
+  background-color: white;
+}
+
+/*FOOTER*/
+
+
+
+footer{
+  margin-top: 50px;
+  display: flex;
+  vertical-align: middle;
+  height: 166px;
+  background-color: #222;
+  justify-content: center;
+}
+
+footer p{
+  display: inline-block;
+  padding: 67px 0;
+  font-size: 20pt;
+}
+
+@media screen and (max-width: 1280px) {
+  section{
+    height: auto;
+  }
+
+  section.header{
+    height: 768px !important;
+  }
+
+  section.sobre .container{
+    text-align: center;
+  }
+  
+  section.sobre div.right{
+    margin-top: 0;
+    float: none;
+  }
+
+  section.projetos h3{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  section.conhecimentos .flex{
+    flex-wrap: wrap;
+  }
+
+  section.conhecimentos .conhe-wrapper{
+    width: 100%;
+  }
+  
+  section.projetos .container h3{
+    margin: 0;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  section.projetos .wrapper{
+    flex-direction: column;
+  }
+  
+  section.projetos .wrapper .projeto{
+    align-self: center;
+    background-color: aqua;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 331px;
+    max-height: 331px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.sobre .container{
+    text-align: center;
+  }
+
+  section.sobre .img{
+    width: 100%;
+  }
+
+  section.sobre .info{
+    float: none;
+  }
+
+  section.sobre .tx-sobre{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  
+  section.conhecimentos{
+    height: auto;
+  }
+
+  section.conhecimentos .container{
+    display: block;
+  }
+
+
+  section.conhecimentos .conhe-wrapper{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  section.conhecimentos .icons{
+    width: 100%;
+    justify-content: center;
+  }
+
+  div.icons .icon{
+    padding: 20px;
+    margin: 30px;
+    width: calc(100% / 2);
+    max-width: 100px;
+    height: calc(100% / 4);
+  }
+  
+}
+
