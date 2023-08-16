@@ -136,8 +136,9 @@ section.conhecimentos{
   margin-top: 30px;
 }
 
+
 section.conhecimentos .conhe-wrapper{
- width: 40%;
+ width: 50%;
 }
 
 .tx-conhe h3{
@@ -152,8 +153,7 @@ section.conhecimentos .conhe-wrapper{
 
 section.conhecimentos .icons{
   justify-content: end;
-  width: 60%;
-  padding: 20px 0 20px 0;
+  width: 50%;
   flex-wrap: wrap;
 }
 
@@ -162,6 +162,8 @@ div.icons .icon{
   align-items: center;
   width: calc(100% / 5);
   height: calc(100% / 2);
+  max-width: 131px;
+  max-height: 127px;
   margin: 0 10px 15px 10px;
   border: 1px solid white;
   border-radius: 20px;
@@ -186,6 +188,11 @@ section.projetos h3{
 
 section.projetos .wrapper{
   justify-content: space-between;
+}
+
+.ghost{
+  width: 20px;
+  height: 1px;
 }
 
 section.projetos .projeto{
@@ -219,7 +226,7 @@ footer p{
   }
 
   section.header{
-    height: 768px !important;
+    min-height: 600px;
   }
 
   section.sobre .container{
@@ -234,6 +241,10 @@ footer p{
   section.projetos h3{
     margin-top: 100px;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  
 }
 
 @media screen and (max-width: 960px) {
@@ -267,7 +278,8 @@ footer p{
 }
 
 @media screen and (max-width: 768px) {
-  section.sobre .container{
+  section .container{
+    padding: 0 2%;
     text-align: center;
   }
 
@@ -284,6 +296,10 @@ footer p{
     width: 100%;
     height: auto;
     margin: 0;
+  }
+
+  section.sobre .contato{
+    padding: 0;
   }
   
   section.conhecimentos{
@@ -308,10 +324,14 @@ footer p{
   div.icons .icon{
     padding: 20px;
     margin: 30px;
-    width: calc(100% / 2);
+    width: calc(100% / 3);
     max-width: 100px;
     height: calc(100% / 4);
   }
+  
+}
+
+@media screen and (max-width){
   
 }
 
