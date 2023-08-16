@@ -30,7 +30,7 @@ section{
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 2%;
+  padding: 0 100px;
 }
 
 .flex{
@@ -59,6 +59,7 @@ section{
 
 section.header{
   align-items: center;
+  max-height: 570px;
 }
 
 .header .tx-header h3{
@@ -179,40 +180,37 @@ section.projetos{
 
 section.projetos h3{
   text-align: left;
-  margin-left: 80px;
   font-size: 36pt;
   font-weight: bold;
 }
 
 section.projetos .wrapper{
-  justify-content: center;
+  justify-content: space-between;
 }
 
 section.projetos .projeto{
   height: 418px;
-  width: 494px;
+  width: 550px;
   border-radius: 30px;
-  margin: 30px;
+  margin: 40px 0 20px 0;
   background-color: white;
 }
 
 /*FOOTER*/
 
-
-
 footer{
-  margin-top: 50px;
-  display: flex;
-  vertical-align: middle;
-  height: 166px;
+  align-items: center;
+  height: 80px;
   background-color: #222;
+}
+
+footer .container{
   justify-content: center;
 }
 
 footer p{
   display: inline-block;
-  padding: 67px 0;
-  font-size: 20pt;
+  font-size: 18pt;
 }
 
 @media screen and (max-width: 1280px) {
