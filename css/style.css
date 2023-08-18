@@ -17,10 +17,6 @@ h3,h4{
 
 /*GERAL*/
 
-section{
-  height:768px;
-}
-
 .container{
   width: 100%;
   max-width: 1366px;
@@ -53,13 +49,14 @@ section{
 /*HEADER*/
 
 section.header{
-  max-height: 570px;
+  position: relative;
   background-image: url(../images/bg.png);
   background-size: cover;
+  justify-content: center;
 }
 
 section.header .container{
-  height: 100%;
+  margin: 100px 0;
   justify-content: center;
   align-items: center;
 }
@@ -67,7 +64,7 @@ section.header .container{
 section.header .overlay{
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   z-index: 1;
   background-image: linear-gradient(to left, rgba(0,0,0,0.9) 30%,  transparent);
 }
@@ -113,6 +110,8 @@ section.header .button{
 /*SOBRE*/
 
 section.sobre{
+  position: relative;
+  z-index: 99;
   background-image: linear-gradient(to top,rgba(54,54,54,0.9),rgba(54,54,54,0));
 }
 
@@ -323,10 +322,26 @@ footer p{
   section.sobre .container{
     text-align: center;
   }
+
+  section.sobre .tx-sobre{
+    margin-top: 0;
+  }
   
   section.sobre div.right{
     margin-top: 0;
     float: none;
+  }
+
+  section.sobre div.img{
+    margin-bottom: 0;
+    bottom: -100px;
+    left: -10px;
+  }
+
+
+  section.sobre .img-detail{
+    right: 100px;
+    top: 630px;
   }
 
   section.projetos h3{
@@ -343,6 +358,9 @@ footer p{
     display: block;
   }
 
+  section.conhecimentos .img-mouse{
+    display: none;
+  }
 
   section.conhecimentos .conhe-wrapper{
     margin-top: 30px;
