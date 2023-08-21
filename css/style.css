@@ -338,6 +338,9 @@ footer p{
     left: -10px;
   }
 
+  section.sobre .gradient-down{
+    display: none;
+  }
 
   section.sobre .img-detail{
     right: 100px;
@@ -383,6 +386,14 @@ footer p{
 }
 
 @media screen and (max-width: 960px) {
+
+  section.header .gradient-left{
+    display: none;
+  }
+
+  section.sobre .gradient-back{
+    display: none;
+  }
 
   section.conhecimentos .flex{
     flex-wrap: wrap;
