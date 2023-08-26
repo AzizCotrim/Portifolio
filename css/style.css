@@ -441,7 +441,7 @@ footer p{
   section.sobre .tx-sobre{
     width: 100%;
     height: auto;
-    margin: 0;
+    margin: 0px;
   }
 
   section.sobre .contato{
@@ -451,6 +451,14 @@ footer p{
 }
 
 @media screen and (max-width: 580px){
+
+  section.sobre div.img{
+    left: 0;
+  }
+
+  section.sobre .tx-sobre{
+    padding: 60px 30px;
+  }
   
   section.conhecimentos .icons{
     padding: 0;
