@@ -459,6 +459,14 @@ footer p{
   section.sobre .tx-sobre{
     padding: 60px 30px;
   }
+
+  section.sobre .contato{
+    padding: 20px 0;
+  }
+
+  section.conhecimentos .container{
+    margin-top: 30px;
+  }
   
   section.conhecimentos .icons{
     padding: 0;
