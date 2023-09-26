@@ -286,11 +286,20 @@ section.projetos .wrapper{
 }
 
 section.projetos .projeto{
+  display: flex;
   height: 418px;
   width: 550px;
   border-radius: 30px;
   margin: 40px 0 20px 0;
   background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+section.projetos p{
+  color: black;
+  font-size: 20px;
+
 }
 
 /*FOOTER*/
@@ -415,7 +424,6 @@ footer p{
   
   section.projetos .wrapper .projeto{
     align-self: center;
-    background-color: aqua;
     margin-bottom: 30px;
     width: 100%;
     max-width: 331px;
